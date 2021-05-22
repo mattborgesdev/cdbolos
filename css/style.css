@@ -1,0 +1,318 @@
+body,
+ul,
+li,
+p,
+a {
+    margin: 0px;
+    padding: 0px;
+    font-size: 16px;
+    font-family: 'Roboto', Arial;
+    list-style: none;
+    text-decoration: none;
+}
+
+.container {
+    width: 960px;
+    display: flex;
+    margin: 0 auto;
+}
+
+/* <-----HEADER-----> */
+
+.header {
+    background-color: #a68f7b;
+    background-image: url("https://www.transparenttextures.com/patterns/black-felt.png");
+    --animate-duration: 1s; /* fadeInDown animate.css */
+    border-top: 1px #3d2b1f solid;
+    border-bottom: 1px #3d2b1f solid;
+}
+
+.header > .container {
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+    --animate-duration: 2s; /* fadeInDown animate.css */
+}
+
+.header img {
+    max-width: 200px;
+    filter: contrast(150%);
+}
+
+.header img:hover {
+    transform: scale(1.05);
+}
+
+.header .info {
+    color: #000000;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', sans-serif;
+    font-size: .95em;
+    font-weight: 300;
+    line-height: 1.15em;
+    padding: 10px;
+    display: block;
+}
+
+.header .info:hover {
+transform: scale(1.05);
+}
+
+.header .menu {
+    display: flex;
+}
+
+.menu li {
+    margin-left: 10px;
+}
+
+.menu li a {
+    color: #3d2b1f;
+    font-size: 1.25em;
+    padding: 10px;
+    border-bottom: #1e272e 2px solid;
+}
+
+.menu li a:hover, .menu li a:active{
+    color: #3d2b1f;
+    border-bottom: #3d2b1f 3px solid;  
+}
+
+.menu li:hover {
+    transform: scale(1.1);
+}
+
+/* <-----SECTION-BANNER-----> */
+
+.section-banner {
+    background-image: url(/assets/img/cake-init.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: left center;
+    background-attachment: fixed;
+    filter: brightness(90%);
+    width: 100%;
+    height: 940px;
+    --animate-duration: 2s; /* fadeIn animate.css */
+}
+
+.section-banner {
+    max-width: 100%;
+}
+
+/* <-----SECTION-ICONS-----> */
+
+.section-icons {
+    background-color: #ffffff;
+    border-top: 1px #3d2b1f solid;
+    border-bottom: 1px #1e272e solid;
+    --animate-duration: 6s; /* slideInUp animate.css */
+}
+
+.section-icons > .container {
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    height: 300px;
+}
+
+.section-icons img {
+    max-width: 200px;
+    margin-top: -20px;
+    padding-bottom: 10px;
+}
+
+.section-icons .icon-1 img, .icon-3 img {
+    max-width: 175px;
+}
+
+.section-icons .icon-1 img:hover, .icon-3 img:hover {
+    transform: scale(1.1);
+}
+
+.section-icons .icon-2 img:hover{
+    transform: scale(1.1);
+}
+
+.section-icons .icon-2 img {
+    padding-top: 25px;
+}
+
+.section-icons .icon-3 img {
+    padding-top: 40px;
+}
+
+/* <-----MAIN-----> */
+
+.main{
+    display: flex;
+    justify-content: space-between;
+    height: 650px;
+    border-bottom: 1px #3d2b1f solid;
+}
+
+.main-left {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: #A68F7B;
+    background-image: url("https://www.transparenttextures.com/patterns/black-felt.png");
+    width: 100%;
+}
+
+.main-left img {
+    max-width: 600px;  
+    padding: 120px 20px 20px 20px;
+    filter: contrast(150%);
+}
+
+.main-left img:hover {
+    transform: scale(1.05);
+}
+
+.main-left p {
+    font-size: 1.25em;
+    padding: 10px;
+}
+
+.main-right {
+    background-image: url(/assets/img/cakinho3.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    filter: saturate(90%);  
+    width: 100%;
+    margin-left: 1px #1e272e solid;
+}
+
+/* <-----SECTION-BANNER-2-----> */
+
+.section-banner-2 {
+    background-image: url(/assets/img/cake3-bg.jpg);
+    height: 650px;
+}
+
+.section-banner-2 > .container {
+    background-color: #372B1F;
+    height: 615px;
+    opacity: 70%;
+}
+
+/* <-----SECTION-PRODUCTS-----> */
+
+.section-products {
+    background-color: #FFFFFF;
+    /* background-image: url("https://www.transparenttextures.com/patterns/black-felt.png"); */
+    height: 400px;
+    display: flex;  
+}
+
+/* .section-products img {
+    width: 600px;
+} */
+
+.section-products > .container {
+    align-items: center;
+
+}
+
+.section-products > .container .slider {
+    display: flex;
+    flex-grow: 1;
+    flex-direction: row;
+    justify-content: center;
+    padding: 20px 0px;
+    flex-wrap: wrap;  
+}
+
+.slider {
+    display: block;
+    height: 293px;
+    width: 600px;
+    margin: auto;
+    margin-top: 20px;
+    position: relative;
+}
+
+.slider li {
+    list-style: none;
+    position: absolute;
+}
+
+.slider img {
+    margin: auto;
+    height: 250px;
+    vertical-align: top;
+    opacity: 0;
+    visibility: hidden;
+    padding-bottom: 50px;
+}
+
+.slider input {
+    display: none;
+}
+
+.slider label {
+    background-color: #000;
+    bottom: 10px;
+    cursor: pointer;
+    display: block;
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    z-index: 10;
+    border-radius: 50%;
+}
+
+.slider li:nth-child(1) label {
+    left: 45%;
+}
+
+.slider li:nth-child(2) label {
+    left: 50%;
+}
+
+.slider li:nth-child(3) label {
+    left: 60%;
+}
+
+.slider li input:checked ~ img {
+    opacity: 1;
+    visibility: visible;
+    z-index: 10;
+}
+
+
+
+/* <-----SECTION-ABOUT-----> */
+
+.section-about {
+    background-color: #A68F7B;
+    background-image: url("https://www.transparenttextures.com/patterns/black-felt.png");
+    height: 840px;   
+}
+
+.section-about > .container {
+    padding: 20px;    
+}
+
+.section-about p {
+    font-size: 1.25em;
+}
+
+/* <-----FOOTER-----> */
+
+.footer {
+    background-color: #FFFFFF;
+    background-image: url("https://www.transparenttextures.com/patterns/bright-squares.png");
+    height: 540px;       
+}
+
+.footer > .container {
+    padding: 20px;    
+}
+
+/* <-----FISAOJFAIOFASOUF-----> */
+
+/* .section-banner-3 img {
+    max-width: 100%;
+} */
